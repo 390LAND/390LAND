@@ -196,3 +196,37 @@ a:hover{
 transform: scale(1.5);
 color: red;
 }
+
+
+
+@media (max-width: 480px) {
+  a {
+    padding: 0px 10px;
+    font-size: 10px;
+  }
+  h1{
+font-size: 20px;
+ }
+
+ audio{
+  width: 210px;
+ }
+  .m-respon {
+    font-size: 19px;
+  }
+
+  .card-grid {
+    display: flex;
+    overflow-x: auto; /* Permet le défilement horizontal */
+    scroll-snap-type: x mandatory; /* Assure un défilement fluide */
+    -webkit-overflow-scrolling: touch; /* Défilement fluide sur iOS */
+    margin-left: 5%;
+  }
+
+  .card {
+    flex: 0 0 auto; /* Empêche le rétrécissement des cartes */
+    width: 50%; /* Largeur des cartes */
+    margin-right: 20px; /* Marge entre les cartes */
+    scroll-snap-align: start; /* Assure un défilement fluide à chaque carte */
+  }
+}
